@@ -24,8 +24,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905773847339562507}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4, y: -0.6, z: 2.62}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.32, y: -0.21, z: 0.58}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 1905773848718318832}
   - {fileID: 1905773847419759659}
@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 1905773847353576303}
   - component: {fileID: 1905773847350751727}
   - component: {fileID: 1905773848652270480}
+  - component: {fileID: 309983809}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -153,7 +154,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905773847356811279}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.0180521, y: -0.6264776, z: -2.4384995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -427,7 +428,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b2a26bfa148b2438630fdf160b6d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 7550246093456508100, guid: efff1e1966b47f243adac595444a0e01, type: 3}
+  playerCamera: {fileID: 1905773847357008431}
+  initialAmmo: 12
+  initialHealth: 20
+  knockbackForce: 100
+  hurtDuration: 0.5
+--- !u!114 &309983809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905773847356811279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a7496d3aa37c474da13112c8cad72c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deceleration: 5
+  mass: 3
 --- !u!1 &1905773847419759658
 GameObject:
   m_ObjectHideFlags: 0
